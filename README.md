@@ -1,5 +1,5 @@
 # Flip game 
-A simple flip game to put in practice your memory, it was made it in react with typeScript and MaterialUI, it could be better, fell free to make whatever you want
+A simple flip game to put in practice your memory, it was made it in react with typeScript, talwindcss and MaterialUI, it could be better, fell free to make whatever you want
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -38,10 +38,11 @@ import react from 'eslint-plugin-react'
 export default tseslint.config({
   // Set the react version
   settings: { react: { version: '18.3' } },
-  plugins: {
+  plugins: [
     // Add the react plugin
-    react,
-  },
+    react(),
+    tailwindcss()
+  ],
   rules: {
     // other rules...
     // Enable its recommended rules
